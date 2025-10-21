@@ -39,7 +39,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 mb-1">Phone</div>
-                    <div className="text-gray-600">(555) 123-4567</div>
+                    <div className="text-gray-600">+91 9701834593</div>
                     <div className="text-sm text-gray-500">Mon-Fri, 8am-6pm PST</div>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 mb-1">Email</div>
-                    <div className="text-gray-600">info@solartech.com</div>
+                    <div className="text-gray-600">bhavishyasolutions25@gmail.com</div>
                     <div className="text-sm text-gray-500">24-hour response time</div>
                   </div>
                 </div>
@@ -59,11 +59,11 @@ export default function Contact() {
                   <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-orange-600" />
                   </div>
-                  <div>
-                    <div className="font-semibold text-gray-900 mb-1">Office Location</div>
-                    <div className="text-gray-600">123 Solar Avenue</div>
-                    <div className="text-gray-600">Green City, CA 90210</div>
-                  </div>
+                    <div>
+                      <div className="font-semibold text-gray-900 mb-1">Office Location</div>
+                      <div className="text-gray-600">R.R.Pet Main Road, Powerpet</div>
+                      <div className="text-gray-600">Eluru, Andhra Pradesh 534002</div>
+                    </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
