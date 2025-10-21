@@ -1,4 +1,4 @@
-import { Sun, Facebook, Instagram } from 'lucide-react';
+import { Sun, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -22,19 +22,11 @@ export default function Footer() {
                   <rect x="10" y="24" width="76" height="12" rx="2" fill="#1976D2" opacity="0.95" />
                   <circle cx="18" cy="16" r="6" fill="#FFC107" />
                 </svg>
-
-                <div className="leading-tight">
-                  <div className="text-xl font-extrabold text-white">BHAVISHYA</div>
-                  <div className="text-xs font-semibold text-green-400 tracking-widest">SOLUTIONS</div>
-                </div>
             </div>
             <p className="text-gray-400">
               Leading the renewable energy revolution with cutting-edge solar solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
               <a
                 href="https://www.instagram.com/bhavishyasolutions?utm_source=qr&igsh=MWt2bHI2enY3NnRuMw=="
                 target="_blank"

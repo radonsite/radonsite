@@ -92,7 +92,7 @@ export default function Projects() {
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                       />
                       <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-bold text-orange-600">
-                        {project.capacity.replace(/\s?kW$/i, '')}
+                        {project.capacity}
                       </div>
                     </div>
 
