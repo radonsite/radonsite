@@ -111,7 +111,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
             <iframe
-              src="https://www.google.com/maps?q=R.R.Pet%20Main%20Road%2C%20Powerpet%2C%20Eluru%2C%20Andhra%20Pradesh%20534002&output=embed"
+              src="https://www.google.com/maps?q=16.7132656,81.1051138&z=17&hl=en://www.google.com/maps?q=R.R.Pet%20Main%20Road%2C%20Powerpet%2C%20Eluru%2C%20Andhra%20Pradesh%20534002&output=embed"
               width="100%"
               height="450"
               style={{ border: 0 }}
