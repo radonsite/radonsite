@@ -8,7 +8,6 @@ export default function Header() {
 
   const navigation = [
     { name: 'Home', path: '/' },
-    { name: 'Why Choose Us', path: '/why-choose-us' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Projects', path: '/projects' },
