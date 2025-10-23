@@ -1,10 +1,11 @@
 import { Sun, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Sun className="w-8 h-8 text-orange-600" />
@@ -45,53 +46,28 @@ export default function Footer() {
               >
                 {/* Inline YouTube play icon */}
                 <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                  <path d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.58A3 3 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12c1.8.58 9.4.58 9.4.58s7.6 0 9.4-.58a3 3 0 0 0 2.1-2.12A31.9 31.9 0 0 0 24 12a31.9 31.9 0 0 0-.5-5.8zM9.8 15.6V8.4L16 12l-6.2 3.6z" />
+                  <path d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.58A3 3 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .5 5.8a3 3 0 0 0 2.1 2.12c1.8.58 9.4.58 9.4.58s7.6 0 9.4-.58a3 3 0 0 0 2.1-2.12A31.9 31.9 0 0 0 24 12a31.9 31.9 0 0 0-.5-5.8zM9.8 15.6V8.4L16 12l-6.2 3.6z" />
                 </svg>
               </a>
-              {/* Twitter and LinkedIn removed per request */}
             </div>
           </div>
 
           <div>
-            <h3 className="text-white font-bold mb-4">Services</h3>
-            <ul className="space-y-3">
-              <li><a href="#services" className="hover:text-orange-600 transition-colors">Residential Solar</a></li>
-              <li><a href="#services" className="hover:text-orange-600 transition-colors">Commercial Solar</a></li>
-              <li><a href="#services" className="hover:text-orange-600 transition-colors">Battery Storage</a></li>
-              <li><a href="#services" className="hover:text-orange-600 transition-colors">Maintenance</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-bold mb-4">Company</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="hover:text-orange-600 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-orange-600 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-orange-600 transition-colors">Blog</a></li>
-              <li><a href="#contact" className="hover:text-orange-600 transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-bold mb-4">Resources</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="hover:text-orange-600 transition-colors">FAQs</a></li>
-              <li><a href="#" className="hover:text-orange-600 transition-colors">Solar Calculator</a></li>
-              <li><a href="#" className="hover:text-orange-600 transition-colors">Financing Options</a></li>
-              <li><a href="#" className="hover:text-orange-600 transition-colors">Warranty Info</a></li>
+            <h3 className="text-white font-bold mb-4">Quick Access</h3>
+            <ul className="flex flex-col space-y-2">
+              <li><Link to="/" className="hover:text-orange-600 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-orange-600 transition-colors">About</Link></li>
+              <li><Link to="/services" className="hover:text-orange-600 transition-colors">Services</Link></li>
+              <li><Link to="/projects" className="hover:text-orange-600 transition-colors">Projects</Link></li>
+              <li><Link to="/contact" className="hover:text-orange-600 transition-colors">Contact</Link></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="border-t border-gray-800 pt-8 flex justify-center">
           <p className="text-gray-400 text-sm">
           © 2024 Bhavishya Solutions. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-sm">
-            <a href="#" className="hover:text-orange-600 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-orange-600 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-orange-600 transition-colors">Cookie Policy</a>
-          </div>
         </div>
       </div>
     </footer>
