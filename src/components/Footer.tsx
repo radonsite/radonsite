@@ -36,6 +36,18 @@ export default function Footer() {
               >
                 <Instagram className="w-5 h-5" />
               </a>
+              <a
+                href="https://youtube.com/@bhavishyasolutions?si=E4lHevWCHngs8j5_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Bhavishya Solutions YouTube"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+              >
+                {/* Inline YouTube play icon */}
+                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <path d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.58A3 3 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12c1.8.58 9.4.58 9.4.58s7.6 0 9.4-.58a3 3 0 0 0 2.1-2.12A31.9 31.9 0 0 0 24 12a31.9 31.9 0 0 0-.5-5.8zM9.8 15.6V8.4L16 12l-6.2 3.6z" />
+                </svg>
+              </a>
               {/* Twitter and LinkedIn removed per request */}
             </div>
           </div>
