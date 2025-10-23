@@ -68,3 +68,28 @@ body::before {
 .hero-bg.active {
   opacity: 1;
 }
+
+/* Ensure the hero section fills the viewport and adjust overlay for small screens */
+section.relative.futuristic-accent {
+  min-height: 100vh;
+}
+
+@media (max-width: 640px) {
+  /* reduce overlay darkness on small devices so text is more readable over images */
+  .futuristic-accent > .absolute .bg-black\/40,
+  .futuristic-accent .bg-black\/40 {
+    background-color: rgba(0,0,0,0.45);
+  }
+
+  /* slightly increase heading sizes so they remain legible */
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* allow a taller content max width on very large screens */
+  .futuristic-accent .max-w-5xl {
+    max-width: 80rem;
+  }
+}

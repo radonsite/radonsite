@@ -56,13 +56,13 @@ export default function Home() {
 
   return (
     <div className="bg-futuristic min-h-screen text-white">
-      {/* Hero Section - reduced height with sliding background images */}
+      {/* Hero Section - full viewport height with sliding background images */}
       <section
-        className="relative futuristic-accent overflow-hidden aspect-video"
+        className="relative futuristic-accent overflow-hidden min-h-screen"
         {...handlers}
       >
         {/* Sliding backgrounds */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden h-full">
           <div
             className="flex h-full transition-transform duration-700 ease-in-out"
             style={{ width: `${slides.length * 100}%`, transform: `translateX(-${currentSlide * (100 / slides.length)}%)` }}
@@ -83,20 +83,20 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center">
           <div className="w-full h-full">
             <div className="w-full h-full bg-black/40 flex items-center">
-              <div className="w-full max-w-4xl mx-auto px-6">
+              <div className="w-full max-w-5xl mx-auto px-6 md:px-8">
                 <div>
                   <span className="bg-orange-500/20 text-orange-300 px-3 py-1.5 rounded-full text-sm font-semibold">
                     {slide.subtitle}
                   </span>
 
-                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight mt-3">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mt-3">
                     {titleParts[0].trim()}
                     {titleParts[1] && (
                       <span className="block text-orange-400 mt-1">{titleParts[1].trim()}</span>
                     )}
                   </h1>
 
-                  <p className="text-sm text-gray-200 mt-3 leading-relaxed max-w-3xl">
+                  <p className="text-sm sm:text-base text-gray-200 mt-3 leading-relaxed max-w-3xl">
                     {slide.description}
                   </p>
                 </div>
